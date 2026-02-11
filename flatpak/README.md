@@ -13,6 +13,7 @@
   ```bash
   # Ubuntu 24.04+ (flatpak-builder 1.4+ in default repos)
   sudo apt install flatpak flatpak-builder appstream appstream-compose appstream-util
+  sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
   flatpak install flathub org.freedesktop.Platform//25.08 org.freedesktop.Sdk//25.08
   ```
   On Ubuntu 22.04 you need flatpak-builder 1.4+ (compose runs on host): add the PPA and install:
@@ -21,6 +22,8 @@
   sudo apt update
   sudo apt install --only-upgrade flatpak-builder
   sudo apt install flatpak-builder appstream appstream-compose appstream-util
+  sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+  flatpak install flathub org.freedesktop.Platform//25.08 org.freedesktop.Sdk//25.08
   ```
   On Fedora:
   ```
